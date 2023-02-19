@@ -1,4 +1,7 @@
-import './globals.css'
+import "./globals.css";
+
+import Footer from "components/UI/Footer/Footer";
+import Header from "components/UI/Header/Header";
 
 export default function RootLayout({ children }) {
   return (
@@ -8,7 +11,11 @@ export default function RootLayout({ children }) {
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
-  )
+  );
 }
