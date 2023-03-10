@@ -27,15 +27,18 @@ const InfoBar = () => {
 
   return (
     <div className="flex justify-between px-8 py-4 lg:pb-[4rem] shadow-md">
-      <div>
+      <div className="flex flex-col items-center">
         <Image src={logo} alt="Mount10tech logo" width={100} height={100} />
+        <div className="text-[13px] font-semibold">MOUNT 10 TECHNOLOGIES</div>
       </div>
       <div className="hidden lg:block">
         <ul className="flex gap-7">
           {infoItem.map((item, i) => {
             return (
               <li key={`infoItem ${i}`} className="flex gap-5">
-                <div className="p-3 bg-primary text-[#fff] rounded-sm">{item.logo}</div>
+                <div className="p-3 bg-primary text-[#fff] rounded-sm">
+                  {item.logo}
+                </div>
                 <div>
                   {item.title} <br />
                   {item.subTitle}
