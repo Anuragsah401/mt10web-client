@@ -16,7 +16,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="hidden lg:block max-w-[900px] mx-auto py-5 px-8 bg-secondary text-[#fff] -mt-8 rounded-md">
+    <div className="hidden relative z-10 lg:block max-w-[900px] mx-auto py-5 px-8 bg-secondary text-[#fff] -mt-8 -mb-8 rounded-md">
       <div></div>
 
       <ul className="flex justify-between">

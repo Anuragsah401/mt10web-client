@@ -1,7 +1,8 @@
+import Homepage from '../components/Homepage/Homepage.jsx'
+
+
 export default function Home() {
   return (
-    <h1 className="text-3xl">
-      Anurag
-    </h1>
+    <Homepage />
   )
 }
