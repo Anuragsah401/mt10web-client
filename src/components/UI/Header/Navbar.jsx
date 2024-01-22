@@ -24,9 +24,9 @@ const Navbar = () => {
           return (
             <li
               key={`linkItem-${i}`}
-              className={pathname == item.link ? "text-[#fd6565]" : ""}
+              className={pathname == item.link ? "text-redish" : ""}
             >
-              <Link href={item.link} className="hover:text-[#fd6565]">{item.name}</Link>
+              <Link href={item.link} className="hover:text-redish">{item.name}</Link>
             </li>
           );
         })}

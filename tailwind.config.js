@@ -13,7 +13,9 @@ module.exports = {
       'primary': '#845D2A',
       'secondary': '#181818',
       'white': "#FFF",
-      'light-dark': "#777777"
+      'light-dark': "#777777",
+      'redish': "#fd6565"
+      
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
