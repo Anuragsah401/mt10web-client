@@ -44,13 +44,13 @@ const Footer = () => {
 
   return (
     <div className="bg-secondary">
-      <div className="flex flex-wrap md:flex-nowrap flex-grow-0 flex-shrink-0 flex-basis-auto justify-between gap-4 text-white pb-[2em] px-5 md:px-0 md:max-w-[720px] lg:max-w-[1140px] mx-auto">
+      <div className="flex flex-wrap xl:flex-nowrap justify-start lg:justify-center xl:justify-between gap-4  text-white pb-[2em] px-5 lg:px-0 md:max-w-[720px] lg:max-w-[1140px] mx-auto">
         <div className=" bg-white text-light-dark -mt-[4.4em]">
           <div className="bg-primary flex gap-5 py-6 justify-center">
             {icons.map((item, index) => (
               <div
                 key={index}
-                className="hover:scale-[1.3] transition-all duration-300 ease-in-out"
+                className="text-white hover:text-redish transition-all duration-300 ease-in-out"
               >
                 <Link href={item.link}>
                   <item.Icon />
@@ -77,12 +77,12 @@ const Footer = () => {
               voluptas ea
             </p>
 
-            <div className="mt-6 flex flex-col gap-2 ">
-              <div className="flex items-center gap-2">
+            <div className="mt-6 flex flex-col gap-3 ">
+              <div className="flex items-center gap-2 hover:text-redish">
                 <MailIconSmall />
                 <a href="mailto:example@gmail.com">example@gmail.com</a>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 hover:text-redish">
                 <CallIcon />
                 <a href="tel:+9779845738741">+977 9845738741</a>
               </div>
@@ -94,7 +94,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-wrap flex-col md:flex-row flex-grow-0 flex-shrink-0 flex-basis-auto gap-x-[3em] gap-y-[2.5em] pt-[3em] md:pt-[6em] md:px-10 col-span-2 ">
+        <div className="flex flex-wrap flex-col md:flex-row flex-grow-0 flex-shrink-0 flex-basis-auto gap-x-[3em] gap-y-[2.5em] pt-[2em] md:pt-10 xl:pt-[6em] xl:px-10">
           <div>
             <h2 className="text-[1.5em] font-semibold mb-5">Company</h2>
             <ul className="">
@@ -129,11 +129,15 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="md:pt-[6em]">
+        <div className="pt-5 md:pt-10 xl:pt-[6em] lg:ml-5">
           <h2 className="text-[1.5em] font-semibold mb-5">Newsletter</h2>
           <p className="text-left">
             Subscribe to our nesletter, Your mail address is very confidential.
           </p>
+          <form action="" className="mt-5 w-[100%]">
+            <input type="email" placeholder="Email adderess" required className="px-3 py-2 rounded-sm w-[100%] mb-3 text-primary" />
+            <button type="submit" className="bg-primary p-2 rounded-sm w-[100%]">Subscribe now</button>
+          </form>
         </div>
       </div>
     </div>
