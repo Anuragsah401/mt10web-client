@@ -7,6 +7,7 @@ import {
   InstaIcon,
   TiktokIcon,
 } from "assets/icons/SocialMediaIcon";
+import { IconHeartCode } from "@tabler/icons-react";
 
 import LocationIcon from "assets/icons/LocationIcon";
 import CallIcon from "assets/icons/CallIcon";
@@ -44,7 +45,7 @@ const Footer = () => {
 
   return (
     <div className="bg-secondary">
-      <div className="flex flex-wrap xl:flex-nowrap justify-start lg:justify-center xl:justify-between gap-4  text-white pb-[2em] px-5 lg:px-0 md:max-w-[720px] lg:max-w-[1140px] mx-auto">
+      <div className="flex flex-wrap xl:flex-nowrap justify-start lg:justify-center xl:justify-between gap-10 text-white pb-[2em] px-5 lg:px-0 md:max-w-[720px] lg:max-w-[1300px] mx-auto">
         <div className=" bg-white text-light-dark -mt-[4.4em]">
           <div className="bg-primary flex gap-5 py-6 justify-center">
             {icons.map((item, index) => (
@@ -135,10 +136,30 @@ const Footer = () => {
             Subscribe to our nesletter, Your mail address is very confidential.
           </p>
           <form action="" className="mt-5 w-[100%]">
-            <input type="email" placeholder="Email adderess" required className="px-3 py-2 rounded-sm w-[100%] mb-3 text-primary" />
-            <button type="submit" className="bg-primary p-2 rounded-sm w-[100%]">Subscribe now</button>
+            <input
+              type="email"
+              placeholder="Email adderess"
+              required
+              className="px-3 py-2 rounded-sm w-[100%] mb-3 text-primary"
+            />
+            <button
+              type="submit"
+              className="bg-primary p-2 rounded-sm w-[100%]"
+            >
+              Subscribe now
+            </button>
           </form>
         </div>
+      </div>
+
+      <div className="text-white text-center py-4 border-t border-white">
+        <p>Copyright © 2024 website by Mountain technology</p>
+        <small>
+          Made with 💕 by{" "}
+          <a href="hello.com" className="underline hover:text-redish">
+            Anurag
+          </a>
+        </small>
       </div>
     </div>
   );
