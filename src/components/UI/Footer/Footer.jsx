@@ -7,7 +7,6 @@ import {
   InstaIcon,
   TiktokIcon,
 } from "assets/icons/SocialMediaIcon";
-import { IconHeartCode } from "@tabler/icons-react";
 
 import LocationIcon from "assets/icons/LocationIcon";
 import CallIcon from "assets/icons/CallIcon";

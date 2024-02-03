@@ -53,7 +53,10 @@ const InfoBar = ({ toggleSidebar }) => {
         </ul>
       </div>
 
-      <button onClick={toggleSidebar} className="lg:hidden text-primary">
+      <button
+        onClick={toggleSidebar}
+        className="lg:hidden text-primary active:scale-110 outline-none"
+      >
         <IconMenuDeep size="2em" />
       </button>
     </div>
