@@ -12,7 +12,11 @@ const InfoBar = ({ toggleSidebar }) => {
     {
       logo: <BuildingIcon />,
       title: "Kathmandu, Nepal",
-      subTitle: <a href="tel:+9779845738741">+977 9845738741</a>,
+      subTitle: (
+        <a className="hover:text-primary" href="tel:+9779845738741">
+          +977 9845738741
+        </a>
+      ),
     },
     {
       logo: <ClockIcon />,
@@ -22,12 +26,16 @@ const InfoBar = ({ toggleSidebar }) => {
     {
       logo: <MailIcon />,
       title: "Get in Touch",
-      subTitle: <a href="mailto:example@gmail.com">example@gmail.com</a>,
+      subTitle: (
+        <a className="hover:text-primary" href="mailto:example@gmail.com">
+          example@gmail.com
+        </a>
+      ),
     },
   ];
 
   return (
-    <div className="flex justify-between items-center px-4 md:px-8 py-2 md:py-4 lg:pb-[4rem] shadow-md">
+    <div className="flex justify-between items-center px-4 md:px-8 py-2 md:py-4 lg:pb-[4rem] shadow-lg">
       <div className="flex flex-col items-center ">
         <Image src={logo} alt="Mount10tech logo" width={100} height={100} />
         <div className="text-[10px] md:text-[13px] font-semibold ">

@@ -36,10 +36,22 @@ const Slider = () => {
       {sliderData.map((slider, i) => {
         return (
           <SwiperSlide key={`slide-${i}`}>
-            <div>
-              <div>
-                {/* <Image src={slider.img} alt="Mount10tech logo" width={100} height={100} /> */}
-                <img src={slider.img} alt="" className="w-full object-cover" />
+            <div className="flex h-[500px] relative lg:static">
+              <div className="lg:w-[50%] w-full h-full text-white lg:text-[black] bg-[#0000005e] lg:bg-white flex flex-col justify-center px-[2rem] lg:px-0 lg:pl-[2rem] absolute lg:static">
+                <h3 className="uppercase text-[0.875em] md:text-[1.2em] mb-1 lg:text-primary">
+                  {slider.title}
+                </h3>
+                <h1 className="text-[2.188em] md:text-[3em] font-semibold">
+                  {slider.description}
+                </h1>
+              </div>
+
+              <div className="lg:w-[50%] flex-1 lg:flex-0 h-full">
+                <img
+                  src={slider.img}
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </SwiperSlide>
