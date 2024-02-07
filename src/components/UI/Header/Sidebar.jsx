@@ -56,8 +56,10 @@ const Sidebar = ({ toggleBar, toggleSidebar }) => {
         {linkItems.map((item, i) => {
           return (
             <Link
+              key={i}
               href={item.link}
               className="text-white hover:bg-light-dark transition-all duration-300 ease-in-out"
+              onClick={toggleSidebar}
             >
               <li
                 key={`linkItem-${i}`}
@@ -104,7 +106,7 @@ const Sidebar = ({ toggleBar, toggleSidebar }) => {
       <div className="flex gap-3 my-10">
         {SocialMediaIcons.map((items, index) => {
           return (
-            <a href="" className="group">
+            <a key={index} href="" className="group">
               <IconStyle key={index} icon={items.icon} />
             </a>
           );
