@@ -22,42 +22,44 @@ const Slider = () => {
   ];
 
   return (
-    <Swiper
-      spaceBetween={50}
-      slidesPerView={1}
-      // onSlideChange={}
-      // onSwiper={(swiper) => console.log(swiper)}
-      modules={[Autoplay, Pagination, Navigation]}
-      autoplay={{
-        delay: 2000,
-      }}
-      loop={true}
-    >
-      {sliderData.map((slider, i) => {
-        return (
-          <SwiperSlide key={`slide-${i}`}>
-            <div className="flex h-[500px] relative lg:static">
-              <div className="lg:w-[50%] w-full h-full text-white lg:text-[black] bg-[#0000005e] lg:bg-white flex flex-col justify-center px-[2rem] lg:px-0 lg:pl-[2rem] absolute lg:static">
-                <h3 className="uppercase text-[0.875em] md:text-[1.2em] mb-1 lg:text-primary">
-                  {slider.title}
-                </h3>
-                <h1 className="text-[2.188em] md:text-[3em] font-semibold">
-                  {slider.description}
-                </h1>
-              </div>
+    <div className=" xl:max-w-[2000px] mx-auto">
+      <Swiper
+        spaceBetween={50}
+        slidesPerView={1}
+        // onSlideChange={}
+        // onSwiper={(swiper) => console.log(swiper)}
+        modules={[Autoplay, Pagination, Navigation]}
+        autoplay={{
+          delay: 2000,
+        }}
+        loop={true}
+      >
+        {sliderData.map((slider, i) => {
+          return (
+            <SwiperSlide key={`slide-${i}`}>
+              <div className="flex h-[500px] relative lg:static">
+                <div className="lg:w-[50%] w-full h-full text-white lg:text-[black] bg-[#0000005e] lg:bg-white flex flex-col justify-center px-[2rem] lg:px-0 lg:pl-[2rem] absolute lg:static">
+                  <h3 className="uppercase text-[0.875em] md:text-[1.2em] mb-1 lg:text-primary">
+                    {slider.title}
+                  </h3>
+                  <h1 className="text-[2.188em] md:text-[3em] font-semibold">
+                    {slider.description}
+                  </h1>
+                </div>
 
-              <div className="lg:w-[50%] flex-1 lg:flex-0 h-full">
-                <img
-                  src={slider.img}
-                  alt=""
-                  className="w-full h-full object-cover"
-                />
+                <div className="lg:w-[50%] flex-1 lg:flex-0 h-full">
+                  <img
+                    src={slider.img}
+                    alt=""
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
-            </div>
-          </SwiperSlide>
-        );
-      })}
-    </Swiper>
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
+    </div>
   );
 };
 
