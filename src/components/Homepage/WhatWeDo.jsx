@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { CiSettings } from "react-icons/ci";
-import Container from "../UI/Container";
+import Container from "components/UI/Container";
 
 const WhatWeDo = () => {
   const services = [
@@ -49,18 +49,16 @@ const WhatWeDo = () => {
 
         {services.map((service, i) => {
           return (
-            <div
+            <Link
+              href=""
               key={i}
-              className="py-[3.125em] px-[2.5em] flex flex-col gap-3 justify-center border "
+              className="py-[3.125em] px-[2.5em] flex flex-col gap-3 justify-center border hover:shadow-xl"
             >
               <div className="text-[5em] ">{service.icon}</div>
-              <span className="text-2xl font-semibold">
-                <Link href="" className="hover:text-redish">
-                  {service.title}
-                </Link>
-              </span>
+
+              <span className="text-2xl font-semibold ">{service.title}</span>
               <p>{service.descriptions}</p>
-            </div>
+            </Link>
           );
         })}
       </div>
