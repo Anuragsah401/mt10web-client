@@ -10,30 +10,40 @@ const WhatWeDo = () => {
       title: "CCTV Installation",
       descriptions:
         "Direct enough off others say eldest may exeter she pain oni. Possible all ignorant supplied get settling marriage",
+      backgroundImg:
+        "https://t4.ftcdn.net/jpg/03/10/59/85/360_F_310598572_aLBURiW3k45bxmogp5FxoMtYVszpL6Vm.jpg",
     },
     {
       icon: <CiSettings />,
       title: "CCTV Installation",
       descriptions:
         "Direct enough off others say eldest may exeter she pain oni. Possible all ignorant supplied get settling marriage",
+      backgroundImg:
+        "https://t4.ftcdn.net/jpg/03/10/59/85/360_F_310598572_aLBURiW3k45bxmogp5FxoMtYVszpL6Vm.jpg",
     },
     {
       icon: <CiSettings />,
       title: "CCTV Installation",
       descriptions:
         "Direct enough off others say eldest may exeter she pain oni. Possible all ignorant supplied get settling marriage",
+      backgroundImg:
+        "https://t4.ftcdn.net/jpg/03/10/59/85/360_F_310598572_aLBURiW3k45bxmogp5FxoMtYVszpL6Vm.jpg",
     },
     {
       icon: <CiSettings />,
       title: "CCTV Installation",
       descriptions:
         "Direct enough off others say eldest may exeter she pain oni. Possible all ignorant supplied get settling marriage",
+      backgroundImg:
+        "https://t4.ftcdn.net/jpg/03/10/59/85/360_F_310598572_aLBURiW3k45bxmogp5FxoMtYVszpL6Vm.jpg",
     },
     {
       icon: <CiSettings />,
       title: "CCTV Installation",
       descriptions:
         "Direct enough off others say eldest may exeter she pain oni. Possible all ignorant supplied get settling marriage",
+      backgroundImg:
+        "https://png.pngtree.com/png-vector/20191121/ourmid/pngtree-blue-bird-vector-or-color-illustration-png-image_2013004.jpg",
     },
   ];
 
@@ -52,8 +62,13 @@ const WhatWeDo = () => {
             <Link
               href=""
               key={i}
-              className="py-[3.125em] px-[2.5em] flex flex-col gap-3 justify-center border hover:shadow-xl"
+              className="py-[3.125em] px-[2.5em] flex flex-col gap-3 justify-center border hover:shadow-xl relative hover:bg-light-dark hover:text-white group transition-all duration-500 ease-in-out"
             >
+              <img
+                src={service.backgroundImg}
+                alt=""
+                className="absolute top-0 bottom-0 left-0 right-0 opacity-0 w-full h-full group-hover:opacity-25 transition-all duration-500 ease-in-out"
+              />
               <div className="text-[5em] ">{service.icon}</div>
 
               <span className="text-2xl font-semibold ">{service.title}</span>
