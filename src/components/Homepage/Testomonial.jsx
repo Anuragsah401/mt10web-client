@@ -33,16 +33,16 @@ const Testomonial = () => {
   ];
 
   return (
-    <Container>
-      <SectionTitle
-        title="our clients"
-        subTitle="What are Clients are saying about us"
-      />
+    <div className="my-20">
+      <Container>
+        <SectionTitle
+          title="our clients"
+          subTitle="What are Clients are saying about us"
+        />
 
-      <div>
         <Swiper
           spaceBetween={50}
-          slidesPerView={2}
+          slidesPerView={1}
           // onSlideChange={}
           // onSwiper={(swiper) => console.log(swiper)}
           modules={[Autoplay, Pagination, Navigation]}
@@ -50,23 +50,31 @@ const Testomonial = () => {
             delay: 4000,
           }}
           loop={true}
+          breakpoints={{
+            // when window width is >= 768px
+            768: {
+              slidesPerView: 2,
+            },
+          }}
         >
           {testomonialDetails.map((details, index) => {
             return (
               <SwiperSlide key={index}>
-                <BsChatRightQuote />
-                <p>{details.quotes}</p>
+                <div className=" ">
+                  <BsChatRightQuote size={"3em"} />
+                  <p className="text-[1.5em] my-5">{details.quotes}</p>
 
-                <div>
-                  <h3>{details.name}</h3>
-                  <span>{details.position}</span>
+                  <div>
+                    <h3 className="font-semibold uppercase">{details.name}</h3>
+                    <span className="uppercase">{details.position}</span>
+                  </div>
                 </div>
               </SwiperSlide>
             );
           })}
         </Swiper>
-      </div>
-    </Container>
+      </Container>
+    </div>
   );
 };
 

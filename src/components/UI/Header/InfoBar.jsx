@@ -7,6 +7,7 @@ import ClockIcon from "assets/icons/ClockIcon";
 import MailIcon from "assets/icons/MailIcon";
 import { IconMenuDeep } from "@tabler/icons-react";
 import Container from "../Container";
+import Link from "next/link";
 
 const InfoBar = ({ toggleSidebar }) => {
   const infoItem = [
@@ -38,12 +39,12 @@ const InfoBar = ({ toggleSidebar }) => {
   return (
     <Container>
       <div className="flex justify-between items-center py-2 md:py-4 lg:pb-[4rem]">
-        <div className="flex flex-col items-center ">
+        <Link href="/" className="flex flex-col items-center ">
           <Image src={logo} alt="Mount10tech logo" width={100} height={100} />
           <div className="text-[10px] md:text-[13px] font-semibold ">
             MOUNT 10 TECHNOLOGIES
           </div>
-        </div>
+        </Link>
 
         <div className="hidden lg:block">
           <ul className="flex gap-7">

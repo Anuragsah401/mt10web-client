@@ -1,6 +1,7 @@
 import Slider from "./Slider";
 import WhatWeDo from "./WhatWeDo";
 import Testomonial from "./Testomonial";
+import Blogs from "./Blogs";
 
 const Homepage = () => {
   return (
@@ -8,6 +9,7 @@ const Homepage = () => {
       <Slider />
       <WhatWeDo />
       <Testomonial />
+      <Blogs />
     </div>
   );
 };

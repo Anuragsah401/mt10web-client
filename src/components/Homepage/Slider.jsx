@@ -3,9 +3,11 @@
 import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from "swiper";
+import { Autoplay, Pagination, Navigation, EffectFade } from "swiper";
+// import {  } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
+import "swiper/css/effect-fade";
 
 const Slider = () => {
   const sliderData = [
@@ -28,11 +30,12 @@ const Slider = () => {
         slidesPerView={1}
         // onSlideChange={}
         // onSwiper={(swiper) => console.log(swiper)}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay, Pagination, Navigation, EffectFade]}
         autoplay={{
-          delay: 2000,
+          delay: 3000,
         }}
         loop={true}
+        effect="fade"
       >
         {sliderData.map((slider, i) => {
           return (
