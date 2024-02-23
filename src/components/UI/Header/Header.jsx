@@ -14,11 +14,11 @@ const Header = () => {
   };
 
   return (
-    <>
+    <div className="">
       <InfoBar toggleSidebar={toggleSidebar} />
       <Navbar />
       <Sidebar toggleBar={toggleBar} toggleSidebar={toggleSidebar} />
-    </>
+    </div>
   );
 };
 

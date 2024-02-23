@@ -9,6 +9,8 @@ import { BsChatRightQuote } from "react-icons/bs";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
+import Image from "next/image";
+import backImage from "assets/patternpad.png";
 
 const Testomonial = () => {
   const testomonialDetails = [
@@ -33,7 +35,9 @@ const Testomonial = () => {
   ];
 
   return (
-    <div className="py-20 bg-secondary text-white">
+    <div className="py-20 relative overflow-hidden bg-[#0000000e]">
+      <Image src={backImage} alt="" className="w-full h-full top-0 opacity-50 bottom-0 absolute object-cover -z-10"/>
+
       <Container>
         <SectionTitle
           title="our clients"
