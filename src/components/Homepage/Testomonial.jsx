@@ -33,7 +33,7 @@ const Testomonial = () => {
   ];
 
   return (
-    <div className="my-20">
+    <div className="py-20 bg-secondary text-white">
       <Container>
         <SectionTitle
           title="our clients"
@@ -62,7 +62,7 @@ const Testomonial = () => {
               <SwiperSlide key={index}>
                 <div className=" ">
                   <BsChatRightQuote size={"3em"} />
-                  <p className="text-[1.5em] my-5">{details.quotes}</p>
+                  <p className="md:text-[1.5em] my-5">{details.quotes}</p>
 
                   <div>
                     <h3 className="font-semibold uppercase">{details.name}</h3>

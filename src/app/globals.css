@@ -18,3 +18,10 @@
     position: relative;
   }
 }
+
+@layer utilities {
+  .animate {
+    /* Bundle of properties */
+    @apply transition-all duration-300 ease-in-out;
+  }
+}
