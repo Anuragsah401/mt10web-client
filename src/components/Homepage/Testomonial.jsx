@@ -41,7 +41,7 @@ const Testomonial = () => {
       <Container>
         <SectionTitle
           title="our clients"
-          subTitle="What are Clients are saying about us"
+          subTitle="What our Clients are saying about us"
         />
 
         <Swiper

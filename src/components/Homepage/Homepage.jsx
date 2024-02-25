@@ -2,6 +2,8 @@ import Slider from "./Slider";
 import WhatWeDo from "./WhatWeDo";
 import Testomonial from "./Testomonial";
 import Blogs from "./Blogs";
+import Team from "./team";
+
 
 const Homepage = () => {
   return (
@@ -9,6 +11,7 @@ const Homepage = () => {
       <Slider />
       <WhatWeDo />
       <Testomonial />
+      <Team />
       <Blogs />
     </div>
   );
