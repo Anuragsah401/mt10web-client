@@ -38,12 +38,19 @@ const Team = () => {
           {teamDetails.map((team, i) => {
             return (
               <div key={i}>
-                <Image src={team.pic} alt={team.name} width={300} height={300} className="object-cover"/>
-                  <div className="text-center mt-[20px] mb-[30px]">
-
-                  <h3 className="font-semibold text-[1.375em] mb-1">{team.name}</h3>
+                <Image
+                  src={team.pic}
+                  alt={team.name}
+                  width={300}
+                  height={300}
+                  className="object-cover"
+                />
+                <div className="text-center mt-[20px] mb-[30px]">
+                  <h3 className="font-semibold text-[1.375em] mb-1">
+                    {team.name}
+                  </h3>
                   <span className="text-primary">{team.post}</span>
-                  </div>
+                </div>
               </div>
             );
           })}
