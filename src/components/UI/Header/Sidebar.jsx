@@ -16,11 +16,12 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 const Sidebar = ({ toggleBar, toggleSidebar }) => {
+  const pathname = usePathname();
+  
   if (!toggleBar) {
     return null;
   }
 
-  const pathname = usePathname();
 
   const linkItems = [
     { name: "Home", link: "/" },
