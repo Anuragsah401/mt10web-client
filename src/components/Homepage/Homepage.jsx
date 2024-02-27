@@ -3,6 +3,8 @@ import WhatWeDo from "./WhatWeDo";
 import Testomonial from "./Testomonial";
 import Blogs from "./Blogs";
 import Team from "./team";
+import Howdowework from "./Howdowework";
+
 
 
 const Homepage = () => {
@@ -10,6 +12,7 @@ const Homepage = () => {
     <div className="mb-[5em]">
       <Slider />
       <WhatWeDo />
+      <Howdowework />
       <Testomonial />
       <Team />
       <Blogs />

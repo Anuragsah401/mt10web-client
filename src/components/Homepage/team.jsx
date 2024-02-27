@@ -64,26 +64,37 @@ const Team = () => {
                     {team.post}
                   </div>
 
-                  <div className="">
-                    <div className="flex justify-center gap-2 items-center mb-1">
-                      <FiPhone size={"1.3em"} />
-                      {team.phoneNo}
-                    </div>
+                  <a
+                    href={`tel:${team.phoneNo}`}
+                    className="inline-flex justify-center gap-2 items-center mb-1 hover:text-redish "
+                  >
+                    <FiPhone size={"1.3em"} />
+                    {team.phoneNo}
+                  </a>
 
-                    <div className="mb-5 flex justify-center gap-2 items-center">
-                      <LuMail size={"1.3em"} />
-                      {team.email}
-                    </div>
-                  </div>
+                  <a
+                    href={`mailto:${team.email}`}
+                    className="mb-5 flex justify-center gap-2 items-center hover:text-redish "
+                  >
+                    <LuMail size={"1.3em"} />
+                    {team.email}
+                  </a>
+
                   <button className="rounded-sm -mb-5 mt-5 w-[50%] mx-auto animate py-3 bg-primary text-white hover:bg-redish flex justify-center items-center gap-1">
                     <span>View Profile</span>
                     <FaAngleRight />
                   </button>
 
                   <div className="absolute -z-[1] group-hover:-top-12 group-hover:z-0 animate top-0 inset-x-0 flex justify-center gap-3 text-[1.5em] py-3 w-[50%] mx-auto bg-primary text-white rounded-t-md">
-                    <GrFacebookOption className="hover:text-redish animate" />
-                    <FaInstagram className="hover:text-redish animate" />
-                    <FaLinkedin className="hover:text-redish animate" />
+                    <a href={team.facebook}>
+                      <GrFacebookOption className="hover:text-redish animate" />
+                    </a>
+                    <a href={team.instagram}>
+                      <FaInstagram className="hover:text-redish animate" />
+                    </a>
+                    <a href={team.linkend}>
+                      <FaLinkedin className="hover:text-redish animate" />
+                    </a>
                   </div>
                 </div>
               </div>
