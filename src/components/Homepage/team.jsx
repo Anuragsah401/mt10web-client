@@ -2,6 +2,8 @@ import React from "react";
 import { FaAngleRight } from "react-icons/fa6";
 import { FiPhone } from "react-icons/fi";
 import { LuMail } from "react-icons/lu";
+import { GrFacebookOption } from "react-icons/gr";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 
 import Container from "components/UI/Container";
 import SectionTitle from "components/UI/SectionTitle";
@@ -15,7 +17,7 @@ const Team = () => {
     {
       name: "Bibek sah",
       post: "Network Engineer",
-      email: "bibek@bibek.com",
+      email: "bibeksah254@gmail.com",
       phoneNo: "+977 9864831512",
       facebook: "",
       instagram: "",
@@ -38,42 +40,51 @@ const Team = () => {
       <Container>
         <SectionTitle title="team" subTitle="Meet Our Professional Team" />
 
-        <div className="flex gap-10 justify-center items-center flex-wrap">
+        <div className="flex gap-10 gap-y-16 justify-center flex-wrap">
           {teamDetails.map((team, i) => {
             return (
               <div
                 key={i}
-                className="flex flex-col items-center border border-[#EBECEC] group"
+                className="flex bg-white relative z-[5] flex-col items-center border border-[#EBECEC] group "
               >
                 <Image
                   src={team.pic}
                   alt={team.name}
-                  width={300}
+                  width={350}
                   height={300}
                   className="object-cover"
                 />
-                <div className="text-center pt-[20px] animate group-hover:text-white group-hover:bg-[#333] w-[100%] h-[100%]">
+
+                <div className="relative bg-white  group-hover:max-h-auto text-center pt-[20px] animate group-hover:text-white group-hover:bg-[#333] w-[100%] h-[100%]">
                   <h3 className="font-semibold text-[1.375em] mb-1 ">
                     {team.name}
                   </h3>
+
                   <div className="mb-3 text-primary group-hover:text-white animate ">
                     {team.post}
                   </div>
 
-                  <div className="flex justify-center gap-2 items-center mb-1">
-                    <FiPhone size={"1.3em"} />
-                    {team.phoneNo}
-                  </div>
+                  <div className="">
+                    <div className="flex justify-center gap-2 items-center mb-1">
+                      <FiPhone size={"1.3em"} />
+                      {team.phoneNo}
+                    </div>
 
-                  <div className="mb-5 flex justify-center gap-2 items-center">
-                    <LuMail />
-                    {team.email}
+                    <div className="mb-5 flex justify-center gap-2 items-center">
+                      <LuMail size={"1.3em"} />
+                      {team.email}
+                    </div>
                   </div>
-
-                  <button className="rounded-sm -mb-5 w-[50%] mx-auto animate py-3 bg-primary text-white hover:bg-secondary flex justify-center items-center gap-1">
+                  <button className="rounded-sm -mb-5 mt-5 w-[50%] mx-auto animate py-3 bg-primary text-white hover:bg-redish flex justify-center items-center gap-1">
                     <span>View Profile</span>
                     <FaAngleRight />
                   </button>
+
+                  <div className="absolute -z-[1] group-hover:-top-12 group-hover:z-0 animate top-0 inset-x-0 flex justify-center gap-3 text-[1.5em] py-3 w-[50%] mx-auto bg-primary text-white rounded-t-md">
+                    <GrFacebookOption className="hover:text-redish animate" />
+                    <FaInstagram className="hover:text-redish animate" />
+                    <FaLinkedin className="hover:text-redish animate" />
+                  </div>
                 </div>
               </div>
             );
