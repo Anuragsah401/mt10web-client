@@ -1,8 +1,13 @@
+import PagesHeadSection from 'components/UI/PagesHeadSection'
+
 
 
 const page = () => {
   return (
-    <div>This is about page</div>
+    <div>
+      <PagesHeadSection title="about" />
+    
+    </div>
   )
 }
 
