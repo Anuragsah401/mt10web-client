@@ -38,7 +38,7 @@ const Team = () => {
   return (
     <div className="py-20">
       <Container>
-        <SectionTitle title="team" subTitle="Meet Our Professional Team" />
+        <SectionTitle title="team" subTitle="Meet Our Professional Teams" />
 
         <div className="flex gap-10 gap-y-16 justify-center flex-wrap">
           {teamDetails.map((team, i) => {

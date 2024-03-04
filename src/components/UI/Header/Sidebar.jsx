@@ -27,8 +27,8 @@ const Sidebar = ({ toggleBar, toggleSidebar }) => {
     { name: "Home", link: "/" },
     { name: "About", link: "/about" },
     { name: "Services", link: "/services" },
-    { name: "Shop", link: "/shop" },
-    { name: "Blog", link: "/blogs" },
+    { name: "Teams", link: "/teams" },
+    { name: "Blogs", link: "/blogs" },
     { name: "Contact", link: "/contact" },
   ];
 
