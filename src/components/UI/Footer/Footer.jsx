@@ -13,8 +13,10 @@ import CallIcon from "assets/icons/CallIcon";
 
 import Image from "next/image";
 
-import logo from "assets/logo.png";
+import logo from "../../../../public/image/logo.png";
 import MailIconSmall from "assets/icons/MailIconSmall";
+
+
 
 const Footer = () => {
   const icons = [

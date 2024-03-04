@@ -4,7 +4,7 @@ import { CiSettings } from "react-icons/ci";
 import Container from "components/UI/Container";
 
 import Image from "next/image";
-import img1 from "assets/1.jpg"
+import img1 from "../../../public/image/1.jpg"
 
 const WhatWeDo = () => {
   const services = [

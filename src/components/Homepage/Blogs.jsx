@@ -4,10 +4,12 @@ import Image from "next/image";
 import Container from "components/UI/Container";
 import SectionTitle from "components/UI/SectionTitle";
 
-import img1 from "assets/1.jpg";
-import img2 from "assets/2.jpg";
-import img3 from "assets/3.jpg";
+import img1 from "../../../public/image/1.jpg";
+import img2 from "../../../public/image/2.jpg";
+import img3 from "../../../public/image/3.jpg";
 import Link from "next/link";
+
+
 
 const Blogs = () => {
   const blogs = [

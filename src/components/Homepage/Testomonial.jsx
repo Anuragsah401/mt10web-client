@@ -10,7 +10,7 @@ import { BsChatRightQuote } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import Image from "next/image";
-import backImage from "assets/patternpad.png";
+import backImage from "../../../public/image/patternpad.png";
 
 const Testomonial = () => {
   const testomonialDetails = [

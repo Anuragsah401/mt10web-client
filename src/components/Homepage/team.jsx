@@ -9,8 +9,8 @@ import Container from "components/UI/Container";
 import SectionTitle from "components/UI/SectionTitle";
 import Image from "next/image";
 
-import img1 from "assets/bibek.jpg";
-import img2 from "assets/sudhan.jpg";
+import img1 from "../../../public/image/bibek.jpg";
+import img2 from "../../../public/image/sudhan.jpg";
 
 const Team = () => {
   const teamDetails = [

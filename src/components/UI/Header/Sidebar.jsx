@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-import logo from "assets/logo.png";
+import logo from "../../../../public/image/logo.png";
 import Image from "next/image";
 import {
   IconX,
@@ -14,6 +14,8 @@ import {
 } from "@tabler/icons-react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+
+
 
 const Sidebar = ({ toggleBar, toggleSidebar }) => {
   const pathname = usePathname();

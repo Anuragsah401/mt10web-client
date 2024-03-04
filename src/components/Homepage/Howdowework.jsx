@@ -4,10 +4,12 @@ import Image from "next/image";
 import Container from "components/UI/Container";
 import SectionTitle from "components/UI/SectionTitle";
 
-import icon1 from "assets/meeting.png";
-import icon2 from "assets/data.png";
-import icon3 from "assets/plan.png";
-import icon4 from "assets/business.png";
+import icon1 from "../../../public/image/meeting.png";
+import icon2 from "../../../public/image/data.png";
+import icon3 from "../../../public/image/plan.png";
+import icon4 from "../../../public/image/business.png";
+import hello from "../../../public/image/hello";
+
 
 const howdowework = () => {
   const workDetails = [

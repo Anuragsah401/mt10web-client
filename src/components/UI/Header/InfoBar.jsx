@@ -1,13 +1,15 @@
 import React from "react";
 import Image from "next/image";
 
-import logo from "assets/logo.png";
+import logo from "../../../../public/image/logo.png";
 import BuildingIcon from "assets/icons/BuildingIcon";
 import ClockIcon from "assets/icons/ClockIcon";
 import MailIcon from "assets/icons/MailIcon";
 import { IconMenuDeep } from "@tabler/icons-react";
 import Container from "../Container";
 import Link from "next/link";
+import hello from "../../../../public/image/hello";
+
 
 const InfoBar = ({ toggleSidebar }) => {
   const infoItem = [

@@ -3,7 +3,9 @@ import BreadCrum from "./BreadCrum";
 
 import Image from "next/image";
 
-import cctvImg from "assets/cctv.jpg";
+import cctvImg from "../../../public/image/cctv.jpg";
+
+
 
 const PagesHeadSection = ({ title, crumLinks }) => {
   return (
