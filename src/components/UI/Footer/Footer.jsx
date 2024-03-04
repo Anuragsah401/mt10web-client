@@ -43,7 +43,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className="bg-secondary">
+    <div className="bg-secondary relative z-20">
       <div className="flex flex-wrap xl:flex-nowrap justify-start lg:justify-center xl:justify-between gap-10 text-white pb-[2em] px-5 lg:px-0 md:max-w-[720px] lg:max-w-[1300px] mx-auto">
         <div className=" bg-white text-light-dark -mt-[4.4em]">
           <div className="bg-primary flex gap-5 py-6 justify-center">

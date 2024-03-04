@@ -1,14 +1,7 @@
-import PagesHeadSection from 'components/UI/PagesHeadSection'
-
-
+import About from "components/About/About";
 
 const page = () => {
-  return (
-    <div>
-      <PagesHeadSection title="about" />
-    
-    </div>
-  )
-}
+  return <About />;
+};
 
-export default page
+export default page;
